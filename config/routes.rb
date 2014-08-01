@@ -1,4 +1,19 @@
 TabHaven::Application.routes.draw do
+  get "users/new"
+	root "staticpages#Home"
+	match '/about', to: "staticpages#about", via: 'get'
+	match '/help', to: "staticpages#help", via: 'get'
+	match '/tos', to: "staticpages#tos", via: 'get'
+	match '/privacypolicy', to: "staticpages#privacypolicy", via: 'get'
+	match '/contact', to: "staticpages#contact", via: 'get'
+	match '/updates', to: "staticpages#updates", via: 'get'
+	match '/news', to: "staticpages#news", via: 'get'
+	match '/reviews', to: "staticpages#reviews", via: 'get'
+	match '/interviews', to: "staticpages#interviews", via: 'get'
+	match '/columns', to: "staticpages#columns", via: 'get'
+	match '/lessons', to: "staticpages#lessons", via: 'get'
+	match '/forums', to: "staticpages#forums", via: 'get'
+	match '/contests', to: "staticpages#contests", via: 'get'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

@@ -11,3 +11,49 @@
  *= require_self
  *= require_tree .
  */
+
+html, body{
+	height: 100%;
+}
+
+#container {
+	min-height: 100%;
+	margin-bottom: -100px;
+	position:relative;
+}
+
+#footer{
+	height: 100px;
+	position:relative;
+}
+
+#water{
+	color:blue;
+}
+
+header{
+	font-size:30px;
+}
+
+#theme {
+	background: #cff;
+	color: green;
+	border: 5px solid green;
+}
+
+.center {
+	text-align: center;
+}
+
+nav{
+	font-size:20px
+}
+
+h1 {
+	border: 3px solid #ccc;
+	padding:10px;
+	color: #333;
+	background-image:url('../images/musicback.jpg');
+	background-size:cover;
+	height: 300px;
+}

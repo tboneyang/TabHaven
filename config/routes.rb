@@ -1,4 +1,5 @@
 TabHaven::Application.routes.draw do
+  devise_for :members
   get "users/new"
 	root "staticpages#Home"
 	match '/about', to: "staticpages#about", via: 'get'

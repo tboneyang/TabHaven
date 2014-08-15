@@ -1,4 +1,19 @@
-<h2>
-Welcome! Expand your knowledge of all things Musical!
+
+
+<div class= "leftside">
+<% if member_signed_in? %>
+
+<h3>You Have Succesfully Signed In!</h3>
+<%= link_to "Sign Out", destroy_member_session_path, :method => :delete %>
+
+<% else %>
+
+<h2 >
+	<%= link_to "Sign In", new_member_session_path, :method => :get %> | 
+	<%= link_to "Sign up", new_member_registration_path, :method => :get %>
 </h2>
+
+<% end %>
+</div>
+
 

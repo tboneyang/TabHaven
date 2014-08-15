@@ -14,6 +14,7 @@
 
 html, body{
 	height: 100%;
+	background-color:#c90;
 }
 
 #container {
@@ -45,6 +46,10 @@ header{
 	text-align: center;
 }
 
+.leftside {
+	margin-left:380px;
+}
+
 nav{
 	font-size:20px
 }
@@ -52,8 +57,17 @@ nav{
 h1 {
 	border: 3px solid #ccc;
 	padding:10px;
-	color: #333;
+	color: white;
 	background-image:url('../images/musicback.jpg');
-	background-size:cover;
-	height: 300px;
+	background-size:100% 100%;
+	height: 200px;
+	width: 800px;
+	margin-left: auto;
+	margin-right: auto;
 }
+
+a {color:white;}      /* unvisited link */
+a:visited {color:white;}  /* visited link */
+a:hover {color:white;}  /* mouse over link */
+a:active {color:white;}  /* selected link */
+
